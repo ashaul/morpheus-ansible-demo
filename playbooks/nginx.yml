@@ -1,7 +1,6 @@
 ---
 - name: Install and start nginx (Morpheus demo)
   hosts: all
-  become: true
   tasks:
     - name: Install nginx
       ansible.builtin.apt:

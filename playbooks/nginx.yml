@@ -1,6 +1,7 @@
 ---
 - name: Install and start nginx (Morpheus demo)
   hosts: all
+  become: true
   gather_facts: false
   tasks:
     - name: Install nginx
